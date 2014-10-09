@@ -34,12 +34,8 @@ section {
 	-moz-animation: dipper-fade 1s linear forwards;
 	-o-animation: dipper-fade 1s linear forwards;
 	-animation: dipper-fade 1s linear forwards;
-
-	/* 
-	animation 
-	*/
-
 }
+
 
 @-webkit-keyframes dipper-fade {
 	0% {
@@ -97,5 +93,79 @@ section {
 }
 
 .shuttle {
-	width: 300px;
+	width: 250px;
+	position: relative;
+	opacity: 0;
+	top:20em;
+}
+
+.js-shuttle-fade {
+	-webkit-animation: shuttle-fade 1.5s linear forwards;
+	-ms-animation: shuttle-fade 1.5s linear forwards;
+	-moz-animation: shuttle-fade 1.5s linear forwards;
+	-o-animation: shuttle-fade 1.5s linear forwards;
+	-animation: shuttle-fade 1.5s linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		top: 20em;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+
+}
+
+@-ms-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		top: 20em;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+
+
+}
+
+@-moz-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		top: 20em;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@-o-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		top: 20em;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		top: 20em;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0;
+	}
 }
